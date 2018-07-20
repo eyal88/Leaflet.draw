@@ -1,5 +1,5 @@
 /*
- Leaflet.draw 1.0.2+f52c0cd, a plugin that adds drawing and editing tools to Leaflet powered maps.
+ Leaflet.draw 1.0.2+21cc43f, a plugin that adds drawing and editing tools to Leaflet powered maps.
  (c) 2012-2017, Jacob Toye, Jon West, Smartrak, Leaflet
 
  https://github.com/Leaflet/Leaflet.draw
@@ -8,7 +8,7 @@
 (function (window, document, undefined) {/**
  * Leaflet.draw assumes that you have already included the Leaflet library.
  */
-L.drawVersion = "1.0.2+f52c0cd";
+L.drawVersion = "1.0.2+21cc43f";
 /**
  * @class L.Draw
  * @aka Draw
@@ -3234,7 +3234,7 @@ L.LatLngUtil = {
 					if (distance > 1000) {
 						distanceStr = L.GeometryUtil.formattedNumber(distance / 1000, precision['km']) + ' ק״מ';
 					} else {
-						distanceStr = L.GeometryUtil.formattedNumber(distance, precision['m']) + ' ׳מ';
+						distanceStr = L.GeometryUtil.formattedNumber(distance, precision['m']) + ' מ׳';
 					}
 					break;
 				case 'feet':

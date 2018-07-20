@@ -127,7 +127,7 @@
 					if (distance > 1000) {
 						distanceStr = L.GeometryUtil.formattedNumber(distance / 1000, precision['km']) + ' ק״מ';
 					} else {
-						distanceStr = L.GeometryUtil.formattedNumber(distance, precision['m']) + ' ׳מ';
+						distanceStr = L.GeometryUtil.formattedNumber(distance, precision['m']) + ' מ׳';
 					}
 					break;
 				case 'feet':
