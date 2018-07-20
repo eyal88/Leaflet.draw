@@ -125,9 +125,9 @@
 				case 'metric':
 					// show metres when distance is < 1km, then show km
 					if (distance > 1000) {
-						distanceStr = L.GeometryUtil.formattedNumber(distance / 1000, precision['km']) + ' km';
+						distanceStr = L.GeometryUtil.formattedNumber(distance / 1000, precision['km']) + ' ק״מ';
 					} else {
-						distanceStr = L.GeometryUtil.formattedNumber(distance, precision['m']) + ' m';
+						distanceStr = L.GeometryUtil.formattedNumber(distance, precision['m']) + ' ׳מ';
 					}
 					break;
 				case 'feet':
