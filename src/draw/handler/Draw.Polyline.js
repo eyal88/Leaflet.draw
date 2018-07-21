@@ -312,9 +312,10 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 			// Pasted from old version 0.3.2
 			// We detect clicks within a certain tolerance, otherwise let it
 			// be interpreted as a drag by the map
-			var distance = L.point(e.originalEvent.clientX, e.originalEvent.clientY)
+			
+			var dragCheckDistance = L.point(clientX, clientY)
 				.distanceTo(this._mouseDownOrigin);
-			if (Math.abs(distance) < 9 * (window.devicePixelRatio || 1)) {
+			if (Math.abs(dragCheckDistance) < 9 * (window.devicePixelRatio || 1)) {
 				this.addVertex(e.latlng);
 			}
 		}
